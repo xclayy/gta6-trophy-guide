@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Guide — GTA VI, all 55 trophies</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div>
+    <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5 &middot; offline guide &amp; tracker</p>
+    <h1>Leonida Trophy Guide</h1>
+    <p class="lede">Every one of the 55 trophies — official name, description and grade — with a guide in our own words, its sources, a roadmap to the platinum, and a checklist that saves in your browser. No account, no network: this page works with the network off.</p>
+  </div>
+  <div class="progress-box" aria-label="Progress">
+    <p class="progress-big"><span id="earnedCount">0</span> / <span id="totalCount">55</span> earned</p>
+    <div class="progress-bar"><div id="progressFill"></div></div>
+    <p id="gradeCounts" class="grade-counts"></p>
+    <p class="progress-note">1 platinum &middot; 2 gold &middot; 6 silver &middot; 46 bronze &middot; 0 online &middot; 1 playthrough</p>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="Views">
+  <button type="button" data-view="checklist" class="tab active">Checklist</button>
+  <button type="button" data-view="roadmap" class="tab">Roadmap to Platinum</button>
+  <button type="button" data-view="missable" class="tab">Missable &amp; timing</button>
+</nav>
+
+<section id="view-checklist" class="view">
+  <div class="controls">
+    <label class="search">Search <input id="search" type="search" placeholder="Trophy name or word, e.g. vault"></label>
+    <label>Grade
+      <select id="grade">
+        <option value="all">All grades</option>
+        <option value="platinum">Platinum</option>
+        <option value="gold">Gold</option>
+        <option value="silver">Silver</option>
+        <option value="bronze">Bronze</option>
+      </select>
+    </label>
+    <label>Show
+      <select id="earnedFilter">
+        <option value="all">All trophies</option>
+        <option value="earned">Earned only</option>
+        <option value="todo">Not earned yet</option>
+      </select>
+    </label>
+    <label class="check"><input id="spoiler" type="checkbox" checked> Spoiler-free: hide story trophies until earned</label>
+  </div>
+  <div class="kinds" id="kinds" aria-label="Filter by kind"></div>
+  <div class="actions">
+    <button id="export" type="button">Export progress (.json)</button>
+    <label class="import">Import progress <input id="import" type="file" accept="application/json,.json"></label>
+    <button id="reset" type="button">Reset checklist</button>
+    <span id="saveState" class="save-state">Progress saves in this browser automatically.</span>
+  </div>
+  <p id="emptyNote" class="empty-note" hidden></p>
+  <ol id="list" class="trophy-list"></ol>
+</section>
+
+<section id="view-roadmap" class="view" hidden>
+  <p id="roadmapIntro" class="roadmap-intro"></p>
+  <ol id="roadmap" class="roadmap"></ol>
+</section>
+
+<section id="view-missable" class="view" hidden>
+  <h2>Missable &amp; timing</h2>
+  <p>Only one trophy is flagged as possibly missable by the guides that published the full list on 18 November 2026 (PowerPyx and GTABase, as reported by EGamers.io and KeenGamer). Everything else can be finished after the story, in free roam.</p>
+  <div id="missableList" class="missable-list"></div>
+  <h3>Timing notes, not missables</h3>
+  <ul class="timing-notes">
+    <li><strong>Side-character chains (Andy, Kenton, Billy, Randy, Tyrone)</strong> — finish each strand as its missions appear. TechWiser, as reported by EGamers.io, notes the stranger chains behind five hidden trophies have windows tied to story progress, so do not leave a strand half-finished until after the credits.</li>
+    <li><strong>Bank vaults</strong> — vaults open with an optional Chapter 4 mission. Take that mission when it appears; the vaults themselves stay open afterwards.</li>
+    <li><strong>Snap Gun for Sneakthief</strong> — finish the Chapter 3 mission Yasmani's Jewelry Jobs to unlock the Snap Gun before attempting a silent jewelry robbery.</li>
+    <li><strong>Cheats</strong> — using cheats disables trophies and saving for that session (GTABase and TechWiser, as reported by EGamers.io). Leave cheats off for the whole run.</li>
+  </ul>
+</section>
+
+<footer>
+  <p>Sources for the guides: Push Square, KeenGamer, games.gg, EGamers.io, GTA Zone, GamerBlurb and the official trophy list as PlayStation publishes it. Each trophy names its sources beside its guide. Guide text is written for this entry, in our own words — sources are cited, never copied. No Rockstar Games logo, artwork or game screenshots are used anywhere in this guide.</p>
+  <p class="fineprint">Leonida Trophy Guide is an unofficial fan guide. Grand Theft Auto and GTA are trademarks of Take-Two Interactive. This page loads nothing from the network.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
